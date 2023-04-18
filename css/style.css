@@ -361,7 +361,7 @@ a {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(52, 84, 122,.1);   
+  background-color: rgba(52, 84, 122, 0.1);
   position: absolute;
   top: 0;
   left: 0;
@@ -533,7 +533,18 @@ a {
 .technologies__platform {
   width: 255px;
   height: 120px;
-  background: url(../img/platforms-pic.jpg) no-repeat center;
+}
+
+.windows {
+  background: url(../img/windows.jpg) no-repeat center;
+}
+
+.linux {
+  background: url(../img/linux.jpg) no-repeat center;
+}
+
+.ios {
+  background: url(../img/ios.jpg) no-repeat center;
 }
 
 /* Technologies end */
@@ -546,7 +557,7 @@ a {
 }
 
 .form__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
@@ -648,29 +659,29 @@ a {
   line-height: 21px;
 }
 
-.footer__telegram-flex {
+.footer__contacts-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer__telegram {
+.footer__contact {
   position: relative;
   width: 44px;
   height: 44px;
   margin-right: 22px;
 }
 
-.footer__telegram:last-child {
+.footer__contact:last-child {
   margin-right: 0;
 }
 
-.footer__telegram-pic {
+.footer__contact-pic {
   width: 100%;
   height: 100%;
 }
 
-.footer__telegram-link {
+.footer__contact-link {
   position: absolute;
   top: 0;
   left: 0;
@@ -735,18 +746,21 @@ a {
     padding: 70px 0;
   }
 
+  .projects__flex {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    row-gap: 40px;
+    max-width: 445px;
+    margin: 0 auto;
+  }
+
   .project {
-    justify-content: center;
+    justify-content: flex-start;
+    margin-right: 10px;
   }
 
   .project__about {
     line-height: 12px;
-  }
-
-  .projects__flex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 40px;
   }
 
   .about__title {
@@ -1024,7 +1038,7 @@ a {
     font-size: 10px;
   }
 
-  .footer__telegram {
+  .footer__contact {
     width: 36px;
     height: 36px;
   }
@@ -1240,7 +1254,11 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .footer__telegram {
+  .project {
+    margin-right: 0;
+  }
+
+  .footer__contact {
     width: 26px;
     height: 26px;
     margin-right: 10px;
