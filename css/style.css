@@ -263,12 +263,12 @@ a {
   transition: 0.5s all;
 }
 
-.header__bottom-btn:hover,
+/* .header__bottom-btn:hover,
 .header__bottom-btn:active,
 .header__bottom-btn:focus {
   opacity: 75%;
   border-radius: 30px;
-}
+} */
 
 .header__bottom-btn-link {
   position: absolute;
