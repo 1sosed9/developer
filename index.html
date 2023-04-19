@@ -13,11 +13,11 @@
 
     <!-- Header start -->
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__top">
                 <div class="header__logo">
-                    <p href="#!" class="header__logo-p">
+                    <p class="header__logo-p">
                         <a class="header__logo-link">WD</a>
                     </p>
                 </div>
@@ -25,19 +25,19 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__list-item">
-                            <a href="#!" class="header__list-item-link">Головна</a>
+                            <a href="#header" class="header__list-item-link js-scroll">Головна</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#!" class="header__list-item-link">Про автора</a>
+                            <a href="#about" class="header__list-item-link js-scroll">Про автора</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#!" class="header__list-item-link">Роботи</a>
+                            <a href="#projects" class="header__list-item-link js-scroll">Роботи</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#!" class="header__list-item-link">Процес</a>
+                            <a href="#work" class="header__list-item-link js-scroll">Процес</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#!" class="header__list-item-link">Зв'язок</a>
+                            <a href="#contacts" class="header__list-item-link js-scroll">Зв'язок</a>
                         </li>
                     </ul>
 
@@ -85,7 +85,7 @@
 
         <!-- About start -->
 
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="about__title">Про мене</h2>
             <p class="about__sub-title">
                 Мене звуть Владислав. Маю досвід верстки по макету з Figma, які зберігаються на моєму GitHub акаунті.
@@ -97,7 +97,7 @@
 
         <!-- Projects start -->
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <div class="projects__flex">
                     <div class="project">
@@ -184,7 +184,7 @@
 
         <!-- Work start -->
 
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <h2 class="work__title">Як я працюю</h2>
                 <p class="work__sub-title">
@@ -197,7 +197,7 @@
 
                         </div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/GQJrzIJEsJ0"
-                            title="YouTube video player" frameborder="0" class="video__element"
+                            title="YouTube video player" class="video__element"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                         </iframe>
@@ -216,42 +216,42 @@
             <div class="technologies__grid">
                 <div class="technologies__grid-item">
                     <img src="./img/technologies-pic1.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/technologies-pic2.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/html-css.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/js.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a>  -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/react.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/babel.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/gulp.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
 
                 <div class="technologies__grid-item">
                     <img src="./img/node-js.jpg" alt="Technology" class="technologies__pic">
-                    <a href="#!" class="technologies__link"></a>
+                    <!-- <a href="#!" class="technologies__link"></a> -->
                 </div>
             </div>
 
@@ -268,7 +268,7 @@
 
         <!-- Form start -->
 
-        <form class="form">
+        <form class="form" id="contacts">
             <div class="container-form">
                 <h2 class="form__title">Хочете веб-сайт?</h2>
                 <p class="form__sub-title">
@@ -279,7 +279,8 @@
                         <input type="text" name="name" class="form-field" placeholder="Ваше ім'я">
                         <input type="email" name="email" class="form-field" placeholder="Ваш e-mail">
                     </p>
-                    <textarea name="comment" id="" cols="" rows="" class="form-comment" placeholder="Сообщение">
+                    <textarea name="comment" id="comment" cols="30" rows="30" class="form-comment"
+                        placeholder="Сообщение">
                     </textarea>
                     <button type="submit" class="form-button">Відправити</button>
                 </fieldset>
