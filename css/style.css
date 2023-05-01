@@ -278,6 +278,23 @@ a {
   left: 0;
 }
 
+.go__up {
+  width: 50px;
+  position: fixed;
+  top: calc(50% - 13px);
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--blue-color);
+}
+.go__up-link {
+  line-height: 26px;
+  color: white;
+
+}
+
 /* Header style end */
 
 /* About style start */
@@ -748,7 +765,7 @@ a {
 
   .projects__flex {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
     max-width: 445px;
     margin: 0 auto;
