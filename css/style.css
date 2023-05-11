@@ -362,6 +362,11 @@ a {
   border-radius: 5px;
 }
 
+.cut_space {
+  background: url(../img/cut-space.jpg) no-repeat center;
+  border-radius: 5px;
+}
+
 .restourant {
   background: url(../img/restourant.png) no-repeat center;
   border-radius: 5px;
